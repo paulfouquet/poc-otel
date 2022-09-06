@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poc-otel"
+version = "0.1.0"
+description = ""
+authors = ["Paul Fouquet <pfouquet@linz.govt.nz>"]
+readme = "README.md"
+packages = [{include = "poc_otel"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opentelemetry-api = "^1.12.0"
+opentelemetry-sdk = "^1.12.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.0"
+black = {version = "^22.8.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
